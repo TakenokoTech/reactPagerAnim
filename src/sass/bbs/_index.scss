@@ -1,0 +1,49 @@
+#mainbord {
+    #textbox {
+        border:0;
+        padding:10px;
+        color:#666;
+        border:solid 1px #59b1eb;
+        width:300px;
+    }
+    #submitButton{
+        padding:8px;
+        background-color: #59b1eb;
+        border: 1px solid #59b1eb;
+        color: #fff;
+    }
+    #submitButton:hover {
+        background-color: #fff;
+        border-color: #59b1eb;
+        color: #59b1eb;
+    }
+}
+
+#preview {
+    p {
+        border: 1px solid #CCC;
+    }
+}
+
+#articles {
+    margin-top: 16px;
+
+    .article {
+        margin: 8px 0;
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid #CCC;
+        opacity: 0;
+        animation: example 0.5s ease 0s 1 forwards;
+    }
+    .deleteArticle{
+        color: red;
+        text-align: right;
+    }
+}
+
+@keyframes example {
+    100% {
+        opacity: 1;
+    }
+}
