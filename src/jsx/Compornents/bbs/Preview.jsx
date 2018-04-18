@@ -14,7 +14,9 @@ export default class Preview extends React.Component {
     // Render
     render() {
         return (
-            <div id="preview" style={{borderColor:"#ccc", borderWidth:1}}>{this.props.inputText}</div>
+            <div id="preview">
+                <p>{this.props.inputText}</p>
+            </div>
         )
     }
 

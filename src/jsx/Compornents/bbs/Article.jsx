@@ -14,7 +14,10 @@ export default class Article extends React.Component {
     // Render
     render() {
         return (
-            <div id="article">{this.props.article}</div>
+            <div className="article">
+                {this.props.article}
+                <div className="deleteArticle" onClick={this.props.delete}>削除</div>
+            </div>
         )
     }
 
